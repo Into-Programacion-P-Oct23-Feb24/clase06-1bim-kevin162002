@@ -25,8 +25,24 @@ public class Ejemplo03 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese el nombre de una ciudad del Ecuador");
+        
+        
+        System.out.println("Ingrese el nombre del estudiante");
         String nombre = entrada.nextLine();
+        nombre = nombre.toLowerCase();
+        
+        System.out.println("Ingrese el apellido del estudiante");
+        String apellido = entrada.nextLine();
+        apellido = apellido.toLowerCase();
+        
+        System.out.println("Ingrese la universidad del estudiante");
+        String universidad = entrada.nextLine();
+        universidad = universidad.toLowerCase();
+        
+        System.out.println("Ingrese la edad del estudiante");
+        int edad = entrada.nextInt();
+        
+        
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
                                        // cadena
@@ -34,38 +50,24 @@ public class Ejemplo03 {
         //  0   1   2   3
         switch(valor){
             case 'a':
-            case'A':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':    
+                System.out.printf("Estudiante %s %s con edad de %d "
+                        + "es estudiante de %s", 
+                        nombre.toLowerCase(), 
+                        apellido.toLowerCase(), 
+                         edad, universidad.toUpperCase());
                 break;
             
-            case 'e':
-            case 'E':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
-                break;    
-             
-            case 'i':
-            case 'I':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
-                break;    
-            
-            case 'o':
-            case 'O':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
-                break;     
-            
-            case 'u':
-            case 'U':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
-                break;    
             
             default:
-                System.out.println("opción incorrecta; ninguna de las "
-                        + "anteriores");
+                System.out.printf("Estudiante %s %s con edad de %d "
+                        + "es estudiante de %s", 
+                        nombre.toUpperCase(), 
+                        apellido.toUpperCase(), 
+                        edad, universidad.toUpperCase());
                 break;
                 
         }
