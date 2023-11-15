@@ -14,7 +14,9 @@ public class EjemploCadenas {
         String ciudad = "loJa";
         ciudad = ciudad.toUpperCase();
         System.out.printf("%s\n", ciudad.toLowerCase());
+        // toLowerCase hace el siginificado de la variable sea minuscula
         System.out.printf("%s\n", ciudad.toUpperCase());
+        // toUpperCase hace que la variable sea mayuscula
         System.out.printf("%s\n", ciudad);
         
         

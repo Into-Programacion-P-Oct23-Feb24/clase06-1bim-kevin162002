@@ -15,6 +15,7 @@ public class Ejemplo02 {
         String pais;
         
         pais = "Ecuador";
+        // para mostrar en pantalla el primer caracter 
         char letra = pais.charAt(0);
         System.out.printf("%s\n", letra);
         
